@@ -1,59 +1,57 @@
 # JavaBlackjack
 
-Um pequeno projeto exemplo de Blackjack em Java, destinado a estudo e experimentação.
+A small project of the Blackjack cardgame in Java, made for study purpose.
 
-**Propósito:** Demonstrar estruturação de um projeto Java simples, jogar partidas automatizadas via terminal e servir como base para extensões (IA, GUI, rede).
+**Objective:** Demonstrate the structure of a simple Java project, play Blackjack matches via terminal and suit as a base for extensions in the future (IA, GUI, web).
 
-## Pré-requisitos
+## Prerequisits
 
-- JDK 11 ou superior instalado e disponível no `PATH`.
+- JDK 11 or superior installed and on `PATH`.
 
-## Estrutura do repositório
+## Reposity structure
 
-- src/: código-fonte Java
-	- App.java — classe com o `main` que inicia o jogo
-	- classes/Deck.java — implementação do baralho
-	- classes/Match.java — lógica da partida
-	- classes/Player.java — representação de jogador
-- lib/: dependências externas (se houver)
-- bin/: saída dos arquivos compilados (bin/classes/)
-- run.bat: script de execução para Windows
+- src/: Java soucecode
+	- App.java — the class with the `main` method
+	- classes/Deck.java — deck implementation
+	- classes/Match.java — match logic
+	- classes/Player.java — representation of the players
+- lib/: extenal depencies (if necessary)
+- bin/: compiled files (bin/classes/)
+- run.bat: script for Windows
 
-## Como compilar e executar
+## How to compile and run
 
-Opções rápidas:
+Quick option:
 
-- Usando o script (Windows):
+- Using the script (Windows):
 
 ```powershell
 ./run.bat
 ```
 
-- Compilação manual (Windows):
+- Manually (Windows):
 
 ```powershell
 javac -d bin\classes src\App.java src\classes\*.java
 java -cp bin\classes App
 ```
 
-- Compilação manual (Linux/macOS):
+- Manually (Linux/macOS):
 
 ```bash
 javac -d bin/classes src/*.java src/classes/*.java
 java -cp bin/classes App
 ```
 
-Observação: ajuste os caminhos caso a árvore de fontes mude.
+## Use
 
-## Uso
+Upon execution, the program will create a simple Blackjack match as defined in `Match`. Examine the code at `src/classes/Match.java` for better understanding.
 
-Ao executar, o programa cria uma partida simples de Blackjack entre jogadores definidos em `Match`. Consulte o código em `src/classes/Match.java` para entender regras e fluxo.
+## Contribuition
 
-## Contribuição
+- Open an issue describing the proposal.
+- Send small and focused pull requests.
 
-- Abra uma issue descrevendo a proposta.
-- Envie pull requests pequenos e focados.
+## License
 
-## Licença
-
-Veja o arquivo `license` na raiz do repositório para detalhes sobre a licença.
+Read the file `license` in the root of the repository for more details.
