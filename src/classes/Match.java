@@ -53,8 +53,8 @@ public class Match {
     public final void hit(){
         System.out.println("You chose Hit. Let's draw more cards.");
         sortCards();
-        System.out.printf("\nYour new cards is: %s.", player.getHand().get(player.getHand().size()-1).getCardName());
-        System.out.printf("\nThe sum of your cards is now %d.", player.getHandSum());
+        System.out.printf("\nYour new cards is: %s.\n", player.getHand().get(player.getHand().size()-1).getCardName());
+        System.out.printf("\nThe sum of your cards is now %d.\n", player.getHandSum());
     }
 
     public final void stand(){
@@ -99,7 +99,7 @@ public class Match {
         if (player.getHandSum() > 21) {
             System.out.println("You surpassed the 21 points limit.");
             opponent.setWinner(true);
-        } else if (player.getHandSum() > 21) {
+        } else if (opponent.getHandSum() > 21) {
             System.out.println("Your opponent surpassed the 21 points limit.");
             player.setWinner(true);
         }
