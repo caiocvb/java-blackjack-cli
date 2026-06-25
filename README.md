@@ -1,4 +1,4 @@
-# JavaBlackjack
+# Java Blackjack
 
 A small project of the Blackjack cardgame in Java, made for study purpose.
 
