@@ -1,0 +1,19 @@
+# Compilados e artefatos
+/bin/
+/bin/classes/
+*.class
+
+# JARs (opcional: remova se você comitar libs intencionalmente)
+*.jar
+
+# IDEs e configurações locais
+.vscode/
+.classpath
+.project
+.settings/
+
+# Sistema / temporários
+*.log
+*.tmp
+Thumbs.db
+.DS_Store
